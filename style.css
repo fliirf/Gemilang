@@ -403,6 +403,10 @@ footer .credit a {
     transform-origin: 0 0;
   }
 
+  .navbar .navbar-nav a:hover {
+    color: #ffd700;
+  }
+
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.3);
   }
