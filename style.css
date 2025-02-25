@@ -71,12 +71,39 @@ html {
 }
 
 .navbar .navbar-extra a {
-  color: #333;
-  margin: 0 0.4rem;
+  margin: 0 0.3rem;
 }
 
-.navbar .navbar-extra a:hover {
+.navbar .navbar-extra .cta-login {
+  display: inline-block;
+  border-radius: 1rem;
+  background-color: #ffd700;
+  padding: 1rem 1rem;
+  transition: all 0.3s ease;
   color: var(--primary);
+}
+
+.navbar .navbar-extra .cta-login:hover {
+  color: var(--primary);
+  transform: translateY(-2px); /* sedikit naik ke atas */
+  box-shadow: 0 4px 8px rgba(0, 87, 255, 0.3); /* shadow lebih besar */
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-extra .cta-register {
+  display: inline-block;
+  border-radius: 1rem;
+  background-color: var(--primary);
+  padding: 1rem 1rem;
+  transition: all 0.3s ease;
+  color: #ffd700;
+}
+
+.navbar .navbar-extra .cta-register:hover {
+  background-color: var(--primary); /* warna yang lebih gelap saat hover */
+  transform: translateY(-2px); /* sedikit naik ke atas */
+  box-shadow: 0 4px 8px rgba(0, 87, 255, 0.3); /* shadow lebih besar */
+  transition: all 0.3s ease;
 }
 
 #hamburger-menu {
@@ -105,7 +132,8 @@ html {
   background-size: 100% 100%;
 }
 
-.hero .content {
+.hero .content,
+.hero .container {
   position: relative;
   padding: 1.4rem 7%;
   z-index: 1;
@@ -117,12 +145,14 @@ html {
   margin-bottom: 1rem;
 }
 
-.hero .content h1 span:first-of-type {
+.hero .content h1 span:first-of-type,
+.hero .container h1 span:first-of-type {
   color: #ffd700;
   -webkit-text-stroke: 2px black;
 }
 
-.hero .content h1 span:last-of-type {
+.hero .content h1 span:last-of-type,
+.hero .container h1 span:last-of-type {
   color: var(--primary);
   -webkit-text-stroke: 2px black;
 }
@@ -358,6 +388,99 @@ footer .credit a {
   font-weight: 700;
 }
 
+/* Login Page */
+#home-login img {
+  width: 70%;
+  height: auto;
+}
+
+.hero .container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero form {
+  flex: 1 1 45rem;
+  margin-right: 15rem;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero form .form-group {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  background-color: var(--bg-body);
+  border: 1px solid #333;
+  padding-left: 2rem;
+  border-radius: 1.5rem;
+}
+
+.hero form .form-group input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  color: #333;
+}
+
+.hero form .btn {
+  width: 100%;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  color: #ffd700;
+  background-color: #0057ff;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 87, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.hero form .lupa {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: blue;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero form .lupa:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.hero form .divider {
+  width: 100%;
+  border-top: 0.5px solid #333; /* Atur ketebalan */
+  margin: 20px 0;
+}
+
+.hero form .register {
+  width: 80%;
+  margin-top: 0.3rem;
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  color: #0057ff;
+  background-color: #ffd700;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 87, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
 /* Media Query */
 
 /* Laptop */
@@ -457,4 +580,5 @@ footer .credit a {
   .about .row .content {
     flex: 1 1 100%;
   }
+  
 }
