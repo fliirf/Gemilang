@@ -8,6 +8,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* <!-- <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="Logo Gemilang" class="logo-login" />
+        </a>
+        <h1>Temukan <span>Bintang</span> di Setiap <span>Anak</span></h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+          assumenda.
+        </p> --> */
+
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +102,7 @@ body {
 
 .navbar .navbar-extra .cta-login:hover {
   color: var(--primary);
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 87, 255, 0.3); /* shadow lebih besar */
   transition: all 0.3s ease;
 }
@@ -108,7 +117,7 @@ body {
 }
 
 .navbar .navbar-extra .cta-register:hover {
-  background-color: var(--primary); 
+  background-color: var(--primary);
   transform: translateY(-2px); /* sedikit naik ke atas */
   box-shadow: 0 4px 8px rgba(0, 87, 255, 0.3); /* shadow lebih besar */
   transition: all 0.3s ease;
@@ -225,7 +234,6 @@ body {
   position: relative;
 }
 
-
 /* Row */
 .about .row {
   max-width: 1200px;
@@ -242,7 +250,6 @@ body {
   min-width: 300px;
   padding: 1rem;
 }
-
 
 /* Row */
 .about .row {
@@ -269,20 +276,20 @@ body {
   text-align: center;
 }
 
-
 /* About Image (Logo Lingkaran) */
 .about-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto 1.5rem; 
+  margin: 0 auto 1.5rem;
 }
 
 .about-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-height: 430px;
 }
 
 .about .content p {
@@ -302,26 +309,17 @@ body {
 
 .about-right img {
   width: 100%;
-  height: auto;
-  max-height: 430px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  border-radius: 15px;
-  z-index: 1;
+  object-fit: cover;
+  max-height: 430px;
+  border-radius: 5px;
 }
 
 
 /* Fitur Section */
 .fitur h2,
-.contact h2, .about h2 {
+.contact h2,
+.about h2 {
   margin-bottom: 1rem;
 }
 .fitur p,
@@ -460,126 +458,6 @@ footer .credit a {
   font-weight: 700;
 }
 
-/* Login Page */
-.hero-login {
-  display: flex;
-  flex-wrap: wrap; /* Biar numpuk rapi kalo layar kecil */
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
-  background: var(--bg-hero);
-  gap: 2rem; /* Jarak antar elemen */
-}
-
-/* Container (Logo dan Text) */
-.hero-login .container {
-  flex: 1;
-  text-align: center;
-  max-width: 500px; /* Batasi lebar maksimum */
-}
-
-#home-login img {
-  width: 100%;
-  height: auto;
-  max-width: 300px; /* Biar ga kegedean di desktop */
-}
-
-.hero-login .container h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.hero-login .container p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Form Styling */
-.hero-login form {
-  flex: 1;
-  max-width: 400px; 
-  background-color: lightblue;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.hero-login form .form-group {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  background-color: #fff;
-  border: 1px solid #333;
-  border-radius: 1.5rem;
-  padding-left: 1rem;
-}
-
-.hero-login form .form-group input {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1.2rem;
-  background: none;
-  border: none;
-  color: #333;
-  outline: none;
-}
-
-.hero-login form .btn {
-  width: 100%;
-  margin-top: 1.5rem;
-  padding: 1rem;
-  font-size: 1.2rem;
-  color: #ffd700;
-  background-color: var(--primary);
-  border: none;
-  border-radius: 2rem;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 87, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.hero-login form .btn:hover {
-  background-color: #0047d1;
-}
-
-.hero-login form .lupa {
-  display: block;
-  margin: 1rem 0;
-  font-size: 1rem;
-  color: blue;
-  text-decoration: none;
-}
-
-.hero-login form .lupa:hover {
-  color: red;
-  text-decoration: underline;
-}
-
-.hero-login form .divider {
-  width: 100%;
-  border-top: 0.5px solid #333;
-  margin: 1.5rem 0;
-}
-
-.hero-login form .register {
-  display: inline-block;
-  width: 100%; /* Biar full width */
-  padding: 1rem;
-  font-size: 1.2rem;
-  color: #0057ff;
-  background-color: #ffd700;
-  border-radius: 2rem;
-  text-decoration: none; /* Hapus garis bawah */
-  box-shadow: 0 2px 5px rgba(0, 87, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.hero-login form .register:hover {
-  background-color: #e6c200; /* Efek hover */
-}
 
 /* Media Query */
 
@@ -657,35 +535,6 @@ footer .credit a {
 
   .contact .row form {
     padding-top: 0;
-  }
-
-  .hero-login {
-    flex-direction: column; /* Numpuk vertikal di mobile */
-    padding: 1rem;
-  }
-
-  .hero-login .container h1 {
-    font-size: 1.5rem; /* Kecilin teks di mobile */
-  }
-
-  .hero-login .container p {
-    font-size: 0.9rem;
-  }
-
-  .hero-login form {
-    padding: 1.5rem;
-    max-width: 100%;
-    margin-bottom: 5rem;
-  }
-
-  .hero-login form .form-group input {
-    font-size: 1rem;
-  }
-
-  .hero-login form .btn,
-  .hero-login form .register {
-    font-size: 1rem;
-    padding: 0.8rem;
   }
 }
 

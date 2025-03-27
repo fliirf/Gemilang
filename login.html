@@ -11,45 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-
+    <!-- Boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!-- My Style -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login-style.css" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <section class="hero-login" id="home-login">
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="Logo Gemilang" class="logo-login" />
-        </a>
-        <h1>Temukan <span>Bintang</span> di Setiap <span>Anak</span></h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-          assumenda.
-        </p>
-      </div>
-
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo" />
+      </a>
+    </div>
+    <div class="container">
       <form action="">
+        <h1>Login</h1>
         <div class="form-group">
           <input type="text" placeholder="Username" />
+          <i><box-icon name="user"></box-icon></i>
         </div>
         <div class="form-group">
           <input type="password" placeholder="Kata Sandi" />
+          <i><box-icon name="lock"></box-icon></i>
         </div>
         <button type="submit" class="btn">Log In</button>
         <a href="lupaPassword.html" class="lupa">Lupa Kata Sandi?</a>
-        <hr class="divider" />
+        <p>Atau Login Menggunakan</p>
+        <div class="social-login">
+          <a href="#"><box-icon type="logo" name="google"></box-icon></a>
+          <a href="#"><box-icon type="logo" name="facebook"></box-icon></a>
+          <a href="#"><box-icon type="logo" name="apple"></box-icon></a>
+          <a href="#"><box-icon type="logo" name="instagram"></box-icon></a>
+        </div>
         <a href="register.html" class="register">Buat Akun Baru</a>
       </form>
-    </section>
-
-    <!-- Feather Icons -->
-    <script>
-      feather.replace();
-    </script>
+    </div>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
