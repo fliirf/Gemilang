@@ -30,12 +30,12 @@ h1 {
   padding: 0.5rem;
 }
 
-h1 span:first-of-type{
+h1 span:first-of-type {
   color: #ffd700;
   -webkit-text-stroke: 2px black;
 }
 
-h1 span:last-of-type{
+h1 span:last-of-type {
   color: var(--primary);
   -webkit-text-stroke: 2px black;
 }
@@ -174,7 +174,7 @@ p {
   }
 
   h1 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #333;
     text-align: center;
     padding: 0.5rem;
